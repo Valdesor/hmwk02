@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Прикольный IQ-тест</title>
+</head>
+<body onload="var v_date_init = new Date();
+    tm_init = v_date_init.getTime();
+    test_tm();">
+    <div class="ui-widget">
+        <div class="mys_total">
+            <div class="mys_top_space">&nbsp;</div>
+            <h1 class="breadcrumb">
+                <a href="/tests/iq_humor.php" class="nowrap">Тест на логіку</a>
+            </h1>
+            <div class="clear_both"></div>
+            <form action="/tests/iq_humor.php" method="post" id="form_test">
+                <div>
+                    <input type="hidden" name="tm" value="1270368063" />
+                    <div id="test_tm"></div>
+                    <div class="quesion">
+                        <span class="quesion_n">1/12</span>.Продавець на ринку продає шапку. Варто 10 руб. Підходить покупець, міряє і згоден взяти. Але у нього є тільки 25 руб. Продавець відсилає хлопчика з цими 25 руб. до сусідки розміняти. хлопчик
+                         вдається і віддає 10 + 10 + 5 руб. Продавець віддає шапку і здачу в 15 руб, а 10 руб. залишає собі. Через деякий час приходить сусідка і каже, що 25 руб. фальшиві, вимагає віддати їй гроші. Продавець повертає їй гроші.
+                         На скільки обманули продавця?
+                        <p>P.S. Автор задачі - Лев Толстой</p>
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[0]" value="0" id="test_0_0" /> <label for="test_0_0">0</label></li>
+                        <li><input type="radio" name="test[0]" value="1" id="test_0_1" /> <label for="test_0_1">5</label></li>
+                        <li><input type="radio" name="test[0]" value="2" id="test_0_2" /> <label for="test_0_2">10</label></li>
+                        <li><input type="radio" name="test[0]" value="3" id="test_0_3" /> <label for="test_0_3">15</label></li>
+                        <li><input type="radio" name="test[0]" value="4" id="test_0_4" /> <label for="test_0_4">20</label></li>
+                        <li><input type="radio" name="test[0]" value="5" id="test_0_5" /> <label for="test_0_5">25</label></li>
+                        <li><input type="radio" name="test[0]" value="6" id="test_0_6" /> <label for="test_0_6">30</label></li>
+                        <li><input type="radio" name="test[0]" value="7" id="test_0_7" /> <label for="test_0_7">35</label></li>
+                        <li><input type="radio" name="test[0]" value="8" id="test_0_8" /> <label for="test_0_8">40</label></li>
+                        <li><input type="radio" name="test[0]" value="9" id="test_0_9" /> <label for="test_0_9">50</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">2 / 12</span>. Словаччина становить 4% від площі України, а площа Словаччини від площі України ...
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[1]" value="0" id="test_1_0" /> <label for="test_1_0">4%</label></li>
+                        <li><input type="radio" name="test[1]" value="1" id="test_1_1" /> <label for="test_1_1">25%</label></li>
+                        <li><input type="radio" name="test[1]" value="2" id="test_1_2" /> <label for="test_1_2">40%</label></li>
+                        <li><input type="radio" name="test[1]" value="3" id="test_1_3" /> <label for="test_1_3">96%</label></li>
+                        <li><input type="radio" name="test[1]" value="4" id="test_1_4" /> <label for="test_1_4">400%</label></li>
+                        <li><input type="radio" name="test[1]" value="5" id="test_1_5" /> <label for="test_1_5">250%</label></li>
+                        <li><input type="radio" name="test[1]" value="6" id="test_1_6" /> <label for="test_1_6">2500%</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">3 / 12</span>. Ви берете участь у марафоні і обігнали бігуна, який втік <b> другим </ b>. Яку позицію ви тепер займаєте?
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[2]" value="0" id="test_2_0" /> <label for="test_2_0">першу</label></li>
+                        <li><input type="radio" name="test[2]" value="1" id="test_2_1" /> <label for="test_2_1">другу</label></li>
+                        <li><input type="radio" name="test[2]" value="2" id="test_2_2" /> <label for="test_2_2">3 позицію</label></li>
+                        <li><input type="radio" name="test[2]" value="3" id="test_2_3" /> <label for="test_2_3">останню</label></li>
+                        <li><input type="radio" name="test[2]" value="4" id="test_2_4" /> <label for="test_2_4">таке не можливо</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">4 / 12</span>. Ви берете участь в марафоні і обігнали бігуна, який біг <b>останнім</b>. Яку позицію ви зараз займаєте?
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[3]" value="0" id="test_3_0" /> <label for="test_3_0">першу</label></li>
+                        <li><input type="radio" name="test[3]" value="1" id="test_3_1" /> <label for="test_3_1">другу</label></li>
+                        <li><input type="radio" name="test[3]" value="2" id="test_3_2" /> <label for="test_3_2">передостанню</label></li>
+                        <li><input type="radio" name="test[3]" value="3" id="test_3_3" /> <label for="test_3_3">останню</label></li>
+                        <li><input type="radio" name="test[3]" value="4" id="test_3_4" /> <label for="test_3_4">таке неможливо</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">6 / 12</span>. Вінні-Пух - це...
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[5]" value="0" id="test_5_0" /> <label for="test_5_0">поросятко</label></li>
+                        <li><input type="radio" name="test[5]" value="1" id="test_5_1" /> <label for="test_5_1">свиня</label></li>
+                        <li><input type="radio" name="test[5]" value="2" id="test_5_2" /> <label for="test_5_2">кабан</label></li>
+                        <li><input type="radio" name="test[5]" value="3" id="test_5_3" /> <label for="test_5_3">хряк</label></li>
+                        <li><input type="radio" name="test[5]" value="4" id="test_5_4" /> <label for="test_5_4">жодне з перечислених</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">7 / 12</span>. Від прямокутного столу відпиляли один кут. Скільки кутів у столу стало? Примітка: лінія надпила пряма і не проходить через кути
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[6]" value="0" id="test_6_0" /> <label for="test_6_0">0</label></li>
+                        <li><input type="radio" name="test[6]" value="1" id="test_6_1" /> <label for="test_6_1">1</label></li>
+                        <li><input type="radio" name="test[6]" value="2" id="test_6_2" /> <label for="test_6_2">2</label></li>
+                        <li><input type="radio" name="test[6]" value="3" id="test_6_3" /> <label for="test_6_3">3</label></li>
+                        <li><input type="radio" name="test[6]" value="4" id="test_6_4" /> <label for="test_6_4">4</label></li>
+                        <li><input type="radio" name="test[6]" value="5" id="test_6_5" /> <label for="test_6_5">5</label></li>
+                        <li><input type="radio" name="test[6]" value="6" id="test_6_6" /> <label for="test_6_6">6</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">8 / 12</span>. Скільки тварин взяв Мойсей на свій ковчег?
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[7]" value="0" id="test_7_0" /> <label for="test_7_0">по одному кожного вида</label></li>
+                        <li><input type="radio" name="test[7]" value="1" id="test_7_1" /> <label for="test_7_1">по два кожного вида</label></li>
+                        <li><input type="radio" name="test[7]" value="2" id="test_7_2" /> <label for="test_7_2">необмежену кількість</label></li>
+                        <li><input type="radio" name="test[7]" value="3" id="test_7_3" /> <label for="test_7_3">жодне з перечислених</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">9 / 12</span>. На столі лежали три редиски і чотири яблука. Дитина взяв зі столу одне яблуко. Скільки фруктів залишилося на столі?
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[8]" value="0" id="test_8_0" /> <label for="test_8_0">0</label></li>
+                        <li><input type="radio" name="test[8]" value="1" id="test_8_1" /> <label for="test_8_1">1</label></li>
+                        <li><input type="radio" name="test[8]" value="2" id="test_8_2" /> <label for="test_8_2">2</label></li>
+                        <li><input type="radio" name="test[8]" value="3" id="test_8_3" /> <label for="test_8_3">3</label></li>
+                        <li><input type="radio" name="test[8]" value="4" id="test_8_4" /> <label for="test_8_4">4</label></li>
+                        <li><input type="radio" name="test[8]" value="5" id="test_8_5" /> <label for="test_8_5">5</label></li>
+                        <li><input type="radio" name="test[8]" value="6" id="test_8_6" /> <label for="test_8_6">6</label></li>
+                        <li><input type="radio" name="test[8]" value="7" id="test_8_7" /> <label for="test_8_7">7</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">10 / 12</span>. Відстань між пунктами А і В 500 км. З пункту А в пункт В виїхав автомобіль зі швидкістю 100 км. / Год. Одночасно назустріч йому з пункту В в пункт А виїхав інший автомобіль зі швидкістю 120 км. / Год. Хто з них буде ближче до пункту А, коли вони зустрінуться? P.S. Автомобіль вважати матеріальною точкою.
+
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[9]" value="0" id="test_9_0" /> <label for="test_9_0">перше авто</label></li>
+                        <li><input type="radio" name="test[9]" value="1" id="test_9_1" /> <label for="test_9_1">друге авто</label></li>
+                        <li><input type="radio" name="test[9]" value="2" id="test_9_2" /> <label for="test_9_2">на однаковій відстані</label></li>
+                        <li><input type="radio" name="test[9]" value="3" id="test_9_3" /> <label for="test_9_3">не зустрінуться</label></li>
+                        <li><input type="radio" name="test[9]" value="4" id="test_9_4" /> <label for="test_9_4">жодне з перечислених</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">11 / 12</span>. Товар спочатку подорожчав на 10%, а потім подешевшав на 10%. Яка його вартість відносно початкової?
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[10]" value="0" id="test_10_0" /> <label for="test_10_0">0</label></li>
+                        <li><input type="radio" name="test[10]" value="1" id="test_10_1" /> <label for="test_10_1">90%</label></li>
+                        <li><input type="radio" name="test[10]" value="2" id="test_10_2" /> <label for="test_10_2">99%</label></li>
+                        <li><input type="radio" name="test[10]" value="3" id="test_10_3" /> <label for="test_10_3">100%</label></li>
+                        <li><input type="radio" name="test[10]" value="4" id="test_10_4" /> <label for="test_10_4">101%</label></li>
+                        <li><input type="radio" name="test[10]" value="5" id="test_10_5" /> <label for="test_10_5">109%</label></li>
+                        <li><input type="radio" name="test[10]" value="6" id="test_10_6" /> <label for="test_10_6">110%</label></li>
+                        <li><input type="radio" name="test[10]" value="7" id="test_10_7" /> <label for="test_10_7">111%</label></li>
+                        <li><input type="radio" name="test[10]" value="8" id="test_10_8" /> <label for="test_10_8">ни одно из вышеперечисленных</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <span class="quesion_n">12 / 12</span>. Скільки раз зустрічається цифра 4 в цілих числах від 1 до 50?
+                    </div>
+                    <ul>
+                        <li><input type="radio" name="test[11]" value="0" id="test_11_0" /> <label for="test_11_0">1</label></li>
+                        <li><input type="radio" name="test[11]" value="1" id="test_11_1" /> <label for="test_11_1">4</label></li>
+                        <li><input type="radio" name="test[11]" value="2" id="test_11_2" /> <label for="test_11_2">5</label></li>
+                        <li><input type="radio" name="test[11]" value="3" id="test_11_3" /> <label for="test_11_3">6</label></li>
+                        <li><input type="radio" name="test[11]" value="4" id="test_11_4" /> <label for="test_11_4">10</label></li>
+                        <li><input type="radio" name="test[11]" value="5" id="test_11_5" /> <label for="test_11_5">14</label></li>
+                        <li><input type="radio" name="test[11]" value="6" id="test_11_6" /> <label for="test_11_6">15</label></li>
+                        <li><input type="radio" name="test[11]" value="7" id="test_11_7" /> <label for="test_11_7">жодне з перечислених</label></li>
+                    </ul>
+                    <div class="quesion">
+                        <input type="text" name="test[19]" value="" id="test_19_0" /> <input type="submit" name="input_submit" value="Взнати результат" />
+                    <footer>
+                    <a href="02.html" class="form">Заповність форму</a>
+                    </footer>
+</body>
+</html>

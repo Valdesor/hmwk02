@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> СОЦІАЛЬНЕ ОПИТУВАННЯ </title>
+</head>
+
+<body>
+    <form name="forma1">
+        <table border="0" cellspacing="9" cellpadding="9">
+            <caption>Форма реєстрації</caption>
+            <tr>
+                <td align="right" valign="top">Імя
+                </td>
+                <td>
+                    <input type="text" name="name" size="25">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">e-mail
+                </td>
+                <td><input type="text" name="e-mail" size="25"></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Пароль</td>
+                <td> <input type="password" name="password" size="25"> </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Повтор пароля</td>
+                <td> <input type="password" name="password2" size="25"> </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Стать</td>
+                <td>
+                    <input type="radio" name="sex" value="man" checked> чол
+                    <input type="radio" name="sex" value="woman"> жін
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">Хоббі</td>
+                <td>
+                    <select name="hobby" size="7" multiple> 
+                    <option value="1">Копмютери 
+                    <option value="2">спорт 
+                    <option value="3">ігри 
+                    <option value="4">Танці
+                    <option value="5">Авто 
+                    <option value="6">Парашутний спорт
+                    <option value="7">музика 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"> Ваші зауваження</td><br>
+                <td> <textarea cols="30" rows="3" wrap="physical"> </textarea> </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"> В які дні ви б хотіли навчатись: (якщо хочете вибрати пару варіанті замжміть ctrl)</td>
+                <td>
+                    <select name="day" size="7" multiple> 
+                    <option value="mon">понеділок
+                    <option value="tue">вівторок
+                    <option value="wen">середа
+                    <option value="thu">четвер 
+                    <option value="fri">пятниця
+                    <option value="sat">субота
+                    <option value="san">неділя 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"> Яку мову ви хочете вивчати</td>
+                <td><select name="language" size="1"> 
+                <option selected value="html">html 
+                <option value="php">php 
+                <option value="java">java 
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">
+                    <input type="submit" name="submit" value="Відправити">
+                    <input type="reset" name="reset" value="Очистити">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
